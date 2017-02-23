@@ -10,7 +10,9 @@
 
 #pragma -mark APIs
 
-NSString *const kAPIBaseURL     =       @"http://appwear.intello3.com/index.php/api/index";
+//NSString *const kAPIBaseURL     =       @"http://appwear.intello3.com/index.php/api/index";
+
+NSString *const kAPIBaseURL     =       @"http://appwear.lotzap.com/index.php/api/index";
 
 NSString *const kSignUp         =       @"/signup/";
 NSString *const kLogin          =       @"/login/";
