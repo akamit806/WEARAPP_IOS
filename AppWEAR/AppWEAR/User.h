@@ -19,6 +19,7 @@
 @property (nonatomic, strong) NSString *gender;
 @property (nonatomic, strong) NSString *userAvatar;
 @property (nonatomic, strong) NSNumber *userId;
+@property (nonatomic, strong) NSString *aboutMe;
 
 -(NSString *)fullName;
 

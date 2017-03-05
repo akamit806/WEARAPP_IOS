@@ -39,6 +39,7 @@
     [_textFieldLastName setText:user.lastName];
     [_textFieldEmail setText:user.email];
     [_textFieldPassword setText:user.password];
+    [_textViewAboutMe setText:user.aboutMe];
     if (user.isSocialLogin.boolValue && (user.email == nil || user.email.length == 0))
     {
         [_textFieldEmail setEnabled:YES];
@@ -105,7 +106,7 @@
             [self.view endEditing:YES];
             [SVProgressHUD showWithStatus:@"Updating Profile..."];
             LoggedInUser *loggedInUser = [LoggedInUser loggedInUser];
-            NSDictionary *parameters = @{kAccess_Token : loggedInUser.accessToken, kFirstName : _textFieldFirstName.text, kLastName : _textFieldLastName.text, kMobile : loggedInUser.mobile, kGender : loggedInUser.gender, kEmail : _textFieldEmail.text};
+            NSDictionary *parameters = @{kAccess_Token : loggedInUser.accessToken, kFirstName : _textFieldFirstName.text, kLastName : _textFieldLastName.text, kMobile : loggedInUser.mobile, kGender : loggedInUser.gender, kEmail : _textFieldEmail.text, kAboutMe : (_textViewAboutMe.text.length ? _textViewAboutMe.text : @"")};
             [[WebApiHandler sharedHandler] updateProfileWithParameters:parameters success:^(NSDictionary *response) {
                 [SVProgressHUD dismiss];
                 if ([[response valueForKey:kResponse] isEqualToString:@"Success"])
@@ -116,6 +117,8 @@
                     loggedInUser.lastName = [data valueForKey:kLastName];
                     loggedInUser.gender = [data valueForKey:kGender];
                     loggedInUser.mobile = [data valueForKey:kMobile];
+                    loggedInUser.email = [data valueForKey:kEmail];
+                    loggedInUser.aboutMe = [data valueForKey:kAboutMe];
                     [LoggedInUser setLoggedInUser:loggedInUser];
                     
                     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Success" message:@"Profile updated successfully." preferredStyle:UIAlertControllerStyleAlert];

@@ -29,4 +29,8 @@
 
 -(NSURLSessionTask *)getUserProfileWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure;
 
+-(NSURLSessionTask *)updateUserLocationWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure;
+
+-(NSURLSessionTask *)getUsersByRadiusWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure;
+
 @end

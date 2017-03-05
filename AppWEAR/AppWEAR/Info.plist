@@ -65,6 +65,10 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>App wants to access your Camera.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>App wants to use your location.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>App wants to use your location.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>App wants to access your photos library.</string>
 	<key>UILaunchStoryboardName</key>

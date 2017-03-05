@@ -14,6 +14,8 @@
 #import "UIImageView+WebCache.h"
 #import "UIButton+WebCache.h"
 #import "LoggedInUser.h"
+#import "LocationManager.h"
+#import "UIColor+AppColor.h"
 
 @interface BaseViewController : UIViewController
 

@@ -22,6 +22,8 @@ NSString *const kUpdateProfile  =       @"/updateprofile/";
 NSString *const kLoginWithSocial  =       @"/loginwithSocial/";
 NSString *const kUpdateAvatar   =       @"/updateavtar/";
 NSString *const kGetUserDetail  =       @"/getUserdetail/";
+NSString *const kUpdateLocation =       @"/updatelocation";
+NSString *const kGetUsersByRadius =     @"/getusersbyRadius";
 
 #pragma -mark API Request Parameters
 
@@ -30,6 +32,7 @@ NSString *const kMiddleName     =       @"middlename";
 NSString *const kLastName       =       @"lastname";
 NSString *const kGender         =       @"gender";
 NSString *const kEmail          =       @"email";
+NSString *const kAboutMe        =       @"about_me";
 NSString *const kPassword       =       @"password";
 NSString *const kCPassword      =       @"cpassword";
 NSString *const kMobile         =       @"mobile";
@@ -45,6 +48,10 @@ NSString *const kUserAvatar     =       @"useravtar";
 NSString *const kFb_Id          =       @"fb_id";
 NSString *const kSocialLoginType =      @"socialLoginType";
 NSString *const kIsSocialLogin  =       @"isSocialLogin";
+NSString *const kLatitude       =       @"latitude";
+NSString *const kLongitude      =       @"longitude";
+NSString *const kAddress        =       @"address";
+NSString *const kDistance       =       @"distance";
 
 #pragma -mark API Response Parameters
 
@@ -54,8 +61,8 @@ NSString *const kCode           =       @"code";
 NSString *const kId             =       @"id";
 NSString *const kMessage        =       @"message";
 NSString *const kData           =       @"data";
-NSString *const kGenderMale     =       @"Male";
-NSString *const kGenderFemale   =       @"Female";
+NSString *const kGenderMale     =       @"male";
+NSString *const kGenderFemale   =       @"female";
 
 #pragma -mark Common Messages
 

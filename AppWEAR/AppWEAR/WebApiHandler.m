@@ -167,4 +167,16 @@
     return [self POST:getUserProfilePath parameters:parameters success:success failure:failure];
 }
 
+-(NSURLSessionTask *)updateUserLocationWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure
+{
+    NSString *updateUserLocation = [kAPIBaseURL stringByAppendingString:kUpdateLocation];
+    return [self POST:updateUserLocation parameters:parameters success:success failure:failure];
+}
+
+-(NSURLSessionTask *)getUsersByRadiusWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure
+{
+    NSString *getUsersByRadius = [kAPIBaseURL stringByAppendingString:kGetUsersByRadius];
+    return [self POST:getUsersByRadius parameters:parameters success:success failure:failure];
+}
+
 @end

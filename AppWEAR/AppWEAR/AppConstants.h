@@ -24,6 +24,8 @@ FOUNDATION_EXPORT NSString *const kUpdateProfile;
 FOUNDATION_EXPORT NSString *const kLoginWithSocial;
 FOUNDATION_EXPORT NSString *const kUpdateAvatar;
 FOUNDATION_EXPORT NSString *const kGetUserDetail;
+FOUNDATION_EXPORT NSString *const kUpdateLocation;
+FOUNDATION_EXPORT NSString *const kGetUsersByRadius;
 
 #pragma -mark API Request Parameters
 
@@ -32,6 +34,7 @@ FOUNDATION_EXPORT NSString *const kMiddleName;
 FOUNDATION_EXPORT NSString *const kLastName;
 FOUNDATION_EXPORT NSString *const kGender;
 FOUNDATION_EXPORT NSString *const kEmail;
+FOUNDATION_EXPORT NSString *const kAboutMe;
 FOUNDATION_EXPORT NSString *const kPassword;
 FOUNDATION_EXPORT NSString *const kCPassword;
 FOUNDATION_EXPORT NSString *const kMobile;
@@ -47,6 +50,10 @@ FOUNDATION_EXPORT NSString *const kUserAvatar;
 FOUNDATION_EXPORT NSString *const kFb_Id;
 FOUNDATION_EXPORT NSString *const kSocialLoginType;
 FOUNDATION_EXPORT NSString *const kIsSocialLogin;
+FOUNDATION_EXPORT NSString *const kLatitude;
+FOUNDATION_EXPORT NSString *const kLongitude;
+FOUNDATION_EXPORT NSString *const kAddress;
+FOUNDATION_EXPORT NSString *const kDistance;
 
 #pragma -mark API Response Parameters
 

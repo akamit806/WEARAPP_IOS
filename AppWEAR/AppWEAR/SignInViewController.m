@@ -47,6 +47,8 @@
 
 -(void)setupViews
 {
+    [_textFieldEmail setText:@""];
+    [_textFieldPassword setText:@""];
     [_textFieldEmail setLeftImage:[UIImage imageNamed:@"user"]];
     [_textFieldPassword setLeftImage:[UIImage imageNamed:@"password2"]];
 }
@@ -231,6 +233,7 @@
             NSDictionary *data = [response objectForKey:kData];
             NSMutableDictionary *userData = [NSMutableDictionary dictionaryWithDictionary:data];
             [userData setObject:@"" forKey:kPassword];
+            [userData setObject:[parameters valueForKey:kSocialManagerUserEmail] forKey:kEmail];
             [userData setObject:[response valueForKey:kAccessToken] forKey:kAccessToken];
             [userData setObject:[response objectForKey:kId] forKey:kId];
             [userData setObject:@1 forKey:kIsSocialLogin];

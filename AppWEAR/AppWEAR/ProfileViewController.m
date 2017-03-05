@@ -8,6 +8,8 @@
 
 #import "ProfileViewController.h"
 #import "SDWebImageManager.h"
+#import "SignInViewController.h"
+#import "AppDelegate.h"
 
 @interface ProfileViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 {
@@ -66,6 +68,14 @@
                 loggedInUser.gender = [data valueForKey:kGender];
                 loggedInUser.mobile = [data valueForKey:kMobile];
                 loggedInUser.userAvatar = [data valueForKey:kUserAvatar];
+                if ([data valueForKey:kAboutMe] == [NSNull null])
+                {
+                    loggedInUser.aboutMe = @"";
+                }
+                else
+                {
+                    loggedInUser.aboutMe = [data valueForKey:kAboutMe];
+                }
                 [LoggedInUser setLoggedInUser:loggedInUser];
                 [weakSelf setupProfileData];
             }
@@ -90,6 +100,16 @@
         [_buttonProfile sd_setImageWithURL:[NSURL URLWithString:user.userAvatar] forState:UIControlStateNormal placeholderImage:nil options:SDWebImageRefreshCached];
     }
 }
+
+- (IBAction)signOutClicked:(UIButton *)sender
+{
+    [LoggedInUser setLoggedInUser:nil];
+    UINavigationController *mainNavigationController = (UINavigationController *)[AppDelegate sharedDelegate].window.rootViewController;
+    SignInViewController *signInController = [mainNavigationController.viewControllers objectAtIndex:2];
+    [mainNavigationController popToViewController:signInController animated:NO];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 - (IBAction)profileButtonClicked:(UIButton *)sender
 {

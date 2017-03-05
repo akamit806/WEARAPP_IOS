@@ -8,6 +8,10 @@
 
 #import "SplashViewController.h"
 #import "IntroductionViewController.h"
+#import "TabBarController.h"
+#import "LeftViewController.h"
+#import "SignInViewController.h"
+#import "RESideMenu.h"
 #import <CoreText/CoreText.h>
 
 @interface SplashViewController ()
@@ -49,7 +53,43 @@
 
 -(void)navigateToSignInControler
 {
-    [self performSegueWithIdentifier:NSStringFromClass([IntroductionViewController class]) sender:nil];
+    if ([LoggedInUser alreadyLoggedInUser])
+    {
+        [self navigateToHomeScreen];
+    }
+    else
+    {
+        [self performSegueWithIdentifier:NSStringFromClass([IntroductionViewController class]) sender:nil];
+    }
+}
+
+-(void)navigateToHomeScreen
+{
+    TabBarController *tabBarController = [self.storyboard instantiateViewControllerWithIdentifier:@"TabBarController"];
+    LeftViewController *leftController = [self.storyboard instantiateViewControllerWithIdentifier:@"LeftViewController"];
+    RESideMenu *sideMenu = [[RESideMenu alloc] initWithContentViewController:tabBarController leftMenuViewController:leftController rightMenuViewController:nil];
+    sideMenu.contentViewShadowColor = [UIColor blackColor];
+    sideMenu.contentViewShadowOffset = CGSizeMake(0, 0);
+    sideMenu.contentViewShadowOpacity = 0.6;
+    sideMenu.contentViewInPortraitOffsetCenterX = 100;
+    sideMenu.contentViewShadowRadius = 12;
+    sideMenu.contentViewShadowEnabled = YES;
+    sideMenu.scaleContentView = NO;
+    sideMenu.scaleMenuView = NO;
+    
+    __weak typeof (self) weakSelf = self;
+    [self presentViewController:sideMenu animated:YES completion:^{
+        [weakSelf performSelector:@selector(pushViewControllers) withObject:nil afterDelay:1.0];
+    }];
+}
+
+-(void)pushViewControllers
+{
+    IntroductionViewController *introController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([IntroductionViewController class])];
+    [self.navigationController pushViewController:introController animated:NO];
+    
+    SignInViewController *signInController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([SignInViewController class])];
+    [self.navigationController pushViewController:signInController animated:NO];
 }
 
 @end

@@ -16,5 +16,6 @@
 
 +(void)setLoggedInUser:(LoggedInUser *)user;
 +(LoggedInUser *)loggedInUser;
++(LoggedInUser *)alreadyLoggedInUser;
 
 @end

@@ -26,6 +26,7 @@
     self.gender = [data valueForKey:kGender];
     self.userAvatar = [data valueForKey:kUserAvatar];
     self.userId = [data objectForKey:kId];
+    self.aboutMe = [data objectForKey:kAboutMe];
     
     return self;
 }
@@ -47,6 +48,7 @@
     self.gender = [aDecoder decodeObjectForKey:kGender];
     self.userAvatar = [aDecoder decodeObjectForKey:kUserAvatar];
     self.userId = [aDecoder decodeObjectForKey:kId];
+    self.aboutMe = [aDecoder decodeObjectForKey:kAboutMe];
     
     return self;
 }
@@ -61,6 +63,7 @@
     [aCoder encodeObject:self.gender forKey:kGender];
     [aCoder encodeObject:self.userAvatar forKey:kUserAvatar];
     [aCoder encodeObject:self.userId forKey:kId];
+    [aCoder encodeObject:self.aboutMe forKey:kAboutMe];
 }
 
 @end

@@ -23,7 +23,7 @@ static LoggedInUser *currentUser = nil;
 
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder
 {
-    self = [super init];
+    self = [super initWithCoder:aDecoder];
     
     self.password = [aDecoder decodeObjectForKey:kPassword];
     self.accessToken = [aDecoder decodeObjectForKey:kAccessToken];
@@ -34,6 +34,7 @@ static LoggedInUser *currentUser = nil;
 
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
+    [super encodeWithCoder:aCoder];
     [aCoder encodeObject:self.password forKey:kPassword];
     [aCoder encodeObject:self.accessToken forKey:kAccessToken];
     [aCoder encodeObject:self.isSocialLogin forKey:kIsSocialLogin];
@@ -58,6 +59,14 @@ static LoggedInUser *currentUser = nil;
 +(LoggedInUser *)loggedInUser
 {
     return currentUser;
+}
+
++(LoggedInUser *)alreadyLoggedInUser
+{
+    NSData *archivedUser = [[NSUserDefaults standardUserDefaults] objectForKey:kLoggedInUser];
+    LoggedInUser *loggedInUser = [NSKeyedUnarchiver unarchiveObjectWithData:archivedUser];
+    currentUser = loggedInUser;
+    return loggedInUser;
 }
 
 @end

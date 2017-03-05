@@ -167,7 +167,7 @@
             __weak typeof (self) weakSelf = self;
             [self.view endEditing:YES];
             [SVProgressHUD showWithStatus:@"Signing Up..."];
-            NSDictionary *parameters = @{kFirstName : _textFieldFirstName.text, kMiddleName : _textFieldNickName.text, kLastName : _textFieldLastName.text, kGender : (_buttonMale.selected ? @"1" : @"2"), kEmail : _textFieldEmail.text, kPassword : _textFieldPassword.text, kCPassword : _textFieldConfirmPassword.text, kMobile :_textFieldMobile.text, kAccessToken : @"3243423", kAccessFrom : @"2", kRegister : @"register"};
+            NSDictionary *parameters = @{kFirstName : _textFieldFirstName.text, kMiddleName : _textFieldNickName.text, kLastName : _textFieldLastName.text, kGender : (_buttonMale.selected ? kGenderMale : kGenderFemale), kEmail : _textFieldEmail.text, kPassword : _textFieldPassword.text, kCPassword : _textFieldConfirmPassword.text, kMobile :_textFieldMobile.text, kAccessToken : @"3243423", kAccessFrom : @"2", kRegister : @"register"};
             [[WebApiHandler sharedHandler] signUpWithParameters:parameters success:^(NSDictionary *response) {
                 [SVProgressHUD dismiss];
                 if ([[response objectForKey:kCode] intValue] == 200 && [[response valueForKey:kResponse] isEqualToString:@"Success"])

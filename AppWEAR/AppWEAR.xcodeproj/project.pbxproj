@@ -15,6 +15,10 @@
 		540D70EC1E50E10A00DECF6C /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540D70EB1E50E10A00DECF6C /* SafariServices.framework */; };
 		540D70EE1E50E11000DECF6C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540D70ED1E50E11000DECF6C /* SystemConfiguration.framework */; };
 		540D70F01E50E29900DECF6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 540D70EF1E50E29900DECF6C /* GoogleService-Info.plist */; };
+		5421FB731E675B9E003AC345 /* UserAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5421FB721E675B9E003AC345 /* UserAnnotation.m */; };
+		5421FB7B1E676359003AC345 /* JPSThumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 5421FB761E676359003AC345 /* JPSThumbnail.m */; };
+		5421FB7C1E676359003AC345 /* JPSThumbnailAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5421FB781E676359003AC345 /* JPSThumbnailAnnotation.m */; };
+		5421FB7D1E676359003AC345 /* JPSThumbnailAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5421FB7A1E676359003AC345 /* JPSThumbnailAnnotationView.m */; };
 		5444BD421E56412F00A3DC57 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5444BD411E56412F00A3DC57 /* SettingsViewController.m */; };
 		5444BD451E5643CC00A3DC57 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5444BD441E5643CC00A3DC57 /* ChangePasswordViewController.m */; };
 		5476D1D51DE763CA001D9DFB /* IntermediateSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5476D1D41DE763CA001D9DFB /* IntermediateSignUpViewController.m */; };
@@ -35,6 +39,13 @@
 		5476D20A1DE770E3001D9DFB /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5476D1FB1DE770E3001D9DFB /* IQKeyboardManager.bundle */; };
 		5476D20D1DE77289001D9DFB /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5476D20C1DE77289001D9DFB /* SignUpViewController.m */; };
 		5477BD901DF0A3DC004FBBE9 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477BD8F1DF0A3DC004FBBE9 /* NavigationController.m */; };
+		547A93941E60BAD400609508 /* SZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 547A93931E60BAD400609508 /* SZTextView.m */; };
+		547C49341E6C1BDB008DAA34 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 547C49331E6C1BDB008DAA34 /* pin.png */; };
+		547C49371E6C2BC5008DAA34 /* CAPSPageMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 547C49361E6C2BC5008DAA34 /* CAPSPageMenu.m */; };
+		547C493A1E6C2D5C008DAA34 /* SearchTrialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 547C49391E6C2D5C008DAA34 /* SearchTrialViewController.m */; };
+		547C493D1E6C2DA5008DAA34 /* NewTrailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 547C493C1E6C2DA5008DAA34 /* NewTrailViewController.m */; };
+		547C49401E6C2DC0008DAA34 /* TrailActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 547C493F1E6C2DC0008DAA34 /* TrailActivityViewController.m */; };
+		547C49431E6C375C008DAA34 /* UIColor+AppColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 547C49421E6C375C008DAA34 /* UIColor+AppColor.m */; };
 		54847E161E4E3BF2003A6847 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54847E121E4E3BF2003A6847 /* Bolts.framework */; };
 		54847E171E4E3BF2003A6847 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54847E131E4E3BF2003A6847 /* FBSDKCoreKit.framework */; };
 		54847E181E4E3BF2003A6847 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54847E141E4E3BF2003A6847 /* FBSDKLoginKit.framework */; };
@@ -42,6 +53,8 @@
 		54847E1D1E4E4FE0003A6847 /* SocialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54847E1C1E4E4FE0003A6847 /* SocialManager.m */; };
 		548634591DE3613100E57F30 /* AppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 548634581DE3613100E57F30 /* AppConstants.m */; };
 		54866E931E0702760022A021 /* IntroContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 54866E921E0702760022A021 /* IntroContent.m */; };
+		548868D61E6499D30059A274 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 548868D51E6499D30059A274 /* LocationManager.m */; };
+		548868D81E649A9C0059A274 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 548868D71E649A9C0059A274 /* CoreLocation.framework */; };
 		54893EAA1E37F463007BF777 /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54893EA91E37F463007BF777 /* ExploreViewController.m */; };
 		54893EAD1E37F49D007BF777 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54893EAC1E37F49D007BF777 /* ProfileViewController.m */; };
 		54893EB01E37F4D5007BF777 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54893EAF1E37F4D5007BF777 /* HomeViewController.m */; };
@@ -76,6 +89,8 @@
 		54977B971E367FFC00446B68 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 54977B941E367FFC00446B68 /* UIViewController+RESideMenu.m */; };
 		54977B9B1E36827900446B68 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54977B9A1E36827900446B68 /* TabBarController.m */; };
 		549AD1711E5779910051ED6C /* AppPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 549AD1701E5779910051ED6C /* AppPageViewController.m */; };
+		549BE0381E65F5590024175A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549BE0371E65F5590024175A /* MapKit.framework */; };
+		549BE03C1E6601410024175A /* ExploreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 549BE03B1E6601410024175A /* ExploreTableViewCell.m */; };
 		54A041F01E4BA31100876830 /* TermsAndConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A041EF1E4BA31100876830 /* TermsAndConditionsViewController.m */; };
 		54A4FD4C1E3FBB6200A12573 /* NSString+PJR.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A4FD4A1E3FBB6200A12573 /* NSString+PJR.m */; };
 		54A4FD501E3FCBAE00A12573 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A4FD4F1E3FCBAE00A12573 /* Reachability.m */; };
@@ -119,6 +134,14 @@
 		540D70EB1E50E10A00DECF6C /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		540D70ED1E50E11000DECF6C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		540D70EF1E50E29900DECF6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5421FB711E675B9E003AC345 /* UserAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAnnotation.h; sourceTree = "<group>"; };
+		5421FB721E675B9E003AC345 /* UserAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAnnotation.m; sourceTree = "<group>"; };
+		5421FB751E676359003AC345 /* JPSThumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSThumbnail.h; sourceTree = "<group>"; };
+		5421FB761E676359003AC345 /* JPSThumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSThumbnail.m; sourceTree = "<group>"; };
+		5421FB771E676359003AC345 /* JPSThumbnailAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSThumbnailAnnotation.h; sourceTree = "<group>"; };
+		5421FB781E676359003AC345 /* JPSThumbnailAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSThumbnailAnnotation.m; sourceTree = "<group>"; };
+		5421FB791E676359003AC345 /* JPSThumbnailAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSThumbnailAnnotationView.h; sourceTree = "<group>"; };
+		5421FB7A1E676359003AC345 /* JPSThumbnailAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSThumbnailAnnotationView.m; sourceTree = "<group>"; };
 		5444BD401E56412F00A3DC57 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		5444BD411E56412F00A3DC57 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		5444BD431E5643CC00A3DC57 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
@@ -160,6 +183,19 @@
 		5476D20C1DE77289001D9DFB /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		5477BD8E1DF0A3DC004FBBE9 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		5477BD8F1DF0A3DC004FBBE9 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		547A93921E60BAD400609508 /* SZTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZTextView.h; sourceTree = "<group>"; };
+		547A93931E60BAD400609508 /* SZTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZTextView.m; sourceTree = "<group>"; };
+		547C49331E6C1BDB008DAA34 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		547C49351E6C2BC5008DAA34 /* CAPSPageMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPSPageMenu.h; sourceTree = "<group>"; };
+		547C49361E6C2BC5008DAA34 /* CAPSPageMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAPSPageMenu.m; sourceTree = "<group>"; };
+		547C49381E6C2D5C008DAA34 /* SearchTrialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTrialViewController.h; sourceTree = "<group>"; };
+		547C49391E6C2D5C008DAA34 /* SearchTrialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTrialViewController.m; sourceTree = "<group>"; };
+		547C493B1E6C2DA5008DAA34 /* NewTrailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTrailViewController.h; sourceTree = "<group>"; };
+		547C493C1E6C2DA5008DAA34 /* NewTrailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTrailViewController.m; sourceTree = "<group>"; };
+		547C493E1E6C2DC0008DAA34 /* TrailActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrailActivityViewController.h; sourceTree = "<group>"; };
+		547C493F1E6C2DC0008DAA34 /* TrailActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrailActivityViewController.m; sourceTree = "<group>"; };
+		547C49411E6C375C008DAA34 /* UIColor+AppColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AppColor.h"; sourceTree = "<group>"; };
+		547C49421E6C375C008DAA34 /* UIColor+AppColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AppColor.m"; sourceTree = "<group>"; };
 		54847E121E4E3BF2003A6847 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		54847E131E4E3BF2003A6847 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		54847E141E4E3BF2003A6847 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -170,6 +206,9 @@
 		548634581DE3613100E57F30 /* AppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConstants.m; sourceTree = "<group>"; };
 		54866E911E0702760022A021 /* IntroContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroContent.h; sourceTree = "<group>"; };
 		54866E921E0702760022A021 /* IntroContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroContent.m; sourceTree = "<group>"; };
+		548868D41E6499D30059A274 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		548868D51E6499D30059A274 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		548868D71E649A9C0059A274 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		54893EA81E37F463007BF777 /* ExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreViewController.h; sourceTree = "<group>"; };
 		54893EA91E37F463007BF777 /* ExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreViewController.m; sourceTree = "<group>"; };
 		54893EAB1E37F49D007BF777 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -239,6 +278,9 @@
 		54977B9A1E36827900446B68 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		549AD16F1E5779910051ED6C /* AppPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPageViewController.h; sourceTree = "<group>"; };
 		549AD1701E5779910051ED6C /* AppPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPageViewController.m; sourceTree = "<group>"; };
+		549BE0371E65F5590024175A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		549BE03A1E6601410024175A /* ExploreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreTableViewCell.h; sourceTree = "<group>"; };
+		549BE03B1E6601410024175A /* ExploreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreTableViewCell.m; sourceTree = "<group>"; };
 		54A041EE1E4BA31100876830 /* TermsAndConditionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsAndConditionsViewController.h; sourceTree = "<group>"; };
 		54A041EF1E4BA31100876830 /* TermsAndConditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsAndConditionsViewController.m; sourceTree = "<group>"; };
 		54A4FD491E3FBB6200A12573 /* NSString+PJR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PJR.h"; sourceTree = "<group>"; };
@@ -307,6 +349,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				549BE0381E65F5590024175A /* MapKit.framework in Frameworks */,
+				548868D81E649A9C0059A274 /* CoreLocation.framework in Frameworks */,
 				540D70EE1E50E11000DECF6C /* SystemConfiguration.framework in Frameworks */,
 				540D70EC1E50E10A00DECF6C /* SafariServices.framework in Frameworks */,
 				54847E161E4E3BF2003A6847 /* Bolts.framework in Frameworks */,
@@ -325,6 +369,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5421FB631E675380003AC345 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				5421FB741E676359003AC345 /* JPSThumbnailAnnotation */,
+				5421FB711E675B9E003AC345 /* UserAnnotation.h */,
+				5421FB721E675B9E003AC345 /* UserAnnotation.m */,
+			);
+			name = Annotations;
+			sourceTree = "<group>";
+		};
+		5421FB741E676359003AC345 /* JPSThumbnailAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				5421FB751E676359003AC345 /* JPSThumbnail.h */,
+				5421FB761E676359003AC345 /* JPSThumbnail.m */,
+				5421FB771E676359003AC345 /* JPSThumbnailAnnotation.h */,
+				5421FB781E676359003AC345 /* JPSThumbnailAnnotation.m */,
+				5421FB791E676359003AC345 /* JPSThumbnailAnnotationView.h */,
+				5421FB7A1E676359003AC345 /* JPSThumbnailAnnotationView.m */,
+			);
+			path = JPSThumbnailAnnotation;
+			sourceTree = "<group>";
+		};
 		5476D1D61DE770C8001D9DFB /* TextFieldPadding */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,6 +512,15 @@
 			name = Modals;
 			sourceTree = "<group>";
 		};
+		548868D31E64994E0059A274 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				548868D41E6499D30059A274 /* LocationManager.h */,
+				548868D51E6499D30059A274 /* LocationManager.m */,
+			);
+			name = LocationManager;
+			sourceTree = "<group>";
+		};
 		54902E8B1E118CE000AA98C5 /* DynamicFontButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -534,9 +610,20 @@
 			name = TabBarController;
 			sourceTree = "<group>";
 		};
+		549BE0391E6601190024175A /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				549BE03A1E6601410024175A /* ExploreTableViewCell.h */,
+				549BE03B1E6601410024175A /* ExploreTableViewCell.m */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
 		54A041ED1E4BA2C400876830 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5421FB631E675380003AC345 /* Annotations */,
+				549BE0391E6601190024175A /* TableViewCells */,
 				54AF92DA1DDF7F2A00149CB7 /* BaseViewController.h */,
 				54AF92DB1DDF7F2A00149CB7 /* BaseViewController.m */,
 				54AF92C61DDF798D00149CB7 /* SplashViewController.h */,
@@ -569,6 +656,12 @@
 				54893EAF1E37F4D5007BF777 /* HomeViewController.m */,
 				54893EB11E37F4EF007BF777 /* TrailViewController.h */,
 				54893EB21E37F4EF007BF777 /* TrailViewController.m */,
+				547C49381E6C2D5C008DAA34 /* SearchTrialViewController.h */,
+				547C49391E6C2D5C008DAA34 /* SearchTrialViewController.m */,
+				547C493B1E6C2DA5008DAA34 /* NewTrailViewController.h */,
+				547C493C1E6C2DA5008DAA34 /* NewTrailViewController.m */,
+				547C493E1E6C2DC0008DAA34 /* TrailActivityViewController.h */,
+				547C493F1E6C2DC0008DAA34 /* TrailActivityViewController.m */,
 				54893EB41E37F502007BF777 /* WarningViewController.h */,
 				54893EB51E37F502007BF777 /* WarningViewController.m */,
 				54A041EE1E4BA31100876830 /* TermsAndConditionsViewController.h */,
@@ -616,6 +709,7 @@
 		54AF92B41DDF798C00149CB7 = {
 			isa = PBXGroup;
 			children = (
+				547C49331E6C1BDB008DAA34 /* pin.png */,
 				54AF92BF1DDF798D00149CB7 /* AppWEAR */,
 				54AF92BE1DDF798D00149CB7 /* Products */,
 				54E003521E3E75C600FC5DCB /* Frameworks */,
@@ -633,6 +727,7 @@
 		54AF92BF1DDF798D00149CB7 /* AppWEAR */ = {
 			isa = PBXGroup;
 			children = (
+				548868D31E64994E0059A274 /* LocationManager */,
 				54847E1A1E4E4FB0003A6847 /* SocialManager */,
 				54977B8D1E367FDC00446B68 /* SideMenuController */,
 				54866E901E07023F0022A021 /* Modals */,
@@ -662,6 +757,10 @@
 		54DE5D641DE37C6B00D19EC3 /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
+				547C49351E6C2BC5008DAA34 /* CAPSPageMenu.h */,
+				547C49361E6C2BC5008DAA34 /* CAPSPageMenu.m */,
+				547A93921E60BAD400609508 /* SZTextView.h */,
+				547A93931E60BAD400609508 /* SZTextView.m */,
 				5492BA0A1E54E77F006638E2 /* SDWebImage */,
 				54A4FD521E3FCED400A12573 /* SVProgressHUD */,
 				54A4FD511E3FCBD800A12573 /* Reachability */,
@@ -673,6 +772,8 @@
 				5477BD911DF0A3F1004FBBE9 /* NavigationController */,
 				549AD16F1E5779910051ED6C /* AppPageViewController.h */,
 				549AD1701E5779910051ED6C /* AppPageViewController.m */,
+				547C49411E6C375C008DAA34 /* UIColor+AppColor.h */,
+				547C49421E6C375C008DAA34 /* UIColor+AppColor.m */,
 			);
 			name = CustomControls;
 			sourceTree = "<group>";
@@ -680,6 +781,8 @@
 		54E003521E3E75C600FC5DCB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				549BE0371E65F5590024175A /* MapKit.framework */,
+				548868D71E649A9C0059A274 /* CoreLocation.framework */,
 				540D70ED1E50E11000DECF6C /* SystemConfiguration.framework */,
 				540D70EB1E50E10A00DECF6C /* SafariServices.framework */,
 				540D70E11E50E0C400DECF6C /* GoogleAppUtilities.framework */,
@@ -789,6 +892,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54A4FD5F1E3FCED400A12573 /* SVProgressHUD.bundle in Resources */,
+				547C49341E6C1BDB008DAA34 /* pin.png in Resources */,
 				54AF92D01DDF798D00149CB7 /* LaunchScreen.storyboard in Resources */,
 				54AF92CD1DDF798D00149CB7 /* Assets.xcassets in Resources */,
 				5476D20A1DE770E3001D9DFB /* IQKeyboardManager.bundle in Resources */,
@@ -823,6 +927,7 @@
 				54C1106E1E3A82D5004FCB16 /* LeftViewController.m in Sources */,
 				5492BA461E54E77F006638E2 /* UIImageView+WebCache.m in Sources */,
 				54977B961E367FFC00446B68 /* RESideMenu.m in Sources */,
+				5421FB7D1E676359003AC345 /* JPSThumbnailAnnotationView.m in Sources */,
 				5492BA381E54E77F006638E2 /* NSImage+WebCache.m in Sources */,
 				5477BD901DF0A3DC004FBBE9 /* NavigationController.m in Sources */,
 				5476D2021DE770E3001D9DFB /* IQKeyboardManager.m in Sources */,
@@ -831,21 +936,30 @@
 				5476D2051DE770E3001D9DFB /* IQBarButtonItem.m in Sources */,
 				54A4FD501E3FCBAE00A12573 /* Reachability.m in Sources */,
 				5492BA431E54E77F006638E2 /* UIImage+MultiFormat.m in Sources */,
+				549BE03C1E6601410024175A /* ExploreTableViewCell.m in Sources */,
 				5476D2031DE770E3001D9DFB /* IQKeyboardReturnKeyHandler.m in Sources */,
 				5476D2061DE770E3001D9DFB /* IQPreviousNextView.m in Sources */,
 				5492BA361E54E77F006638E2 /* MKAnnotationView+WebCache.m in Sources */,
+				547C49401E6C2DC0008DAA34 /* TrailActivityViewController.m in Sources */,
 				5492BA3C1E54E77F006638E2 /* SDWebImageDecoder.m in Sources */,
+				547C493D1E6C2DA5008DAA34 /* NewTrailViewController.m in Sources */,
 				5476D1D51DE763CA001D9DFB /* IntermediateSignUpViewController.m in Sources */,
 				5476D1FF1DE770E3001D9DFB /* IQUIView+Hierarchy.m in Sources */,
 				5492BA421E54E77F006638E2 /* UIImage+GIF.m in Sources */,
 				54847E1D1E4E4FE0003A6847 /* SocialManager.m in Sources */,
 				5476D2001DE770E3001D9DFB /* IQUIViewController+Additions.m in Sources */,
+				547C49431E6C375C008DAA34 /* UIColor+AppColor.m in Sources */,
 				54AF92DC1DDF7F2A00149CB7 /* BaseViewController.m in Sources */,
+				547C49371E6C2BC5008DAA34 /* CAPSPageMenu.m in Sources */,
+				5421FB731E675B9E003AC345 /* UserAnnotation.m in Sources */,
+				548868D61E6499D30059A274 /* LocationManager.m in Sources */,
 				54A4FD4C1E3FBB6200A12573 /* NSString+PJR.m in Sources */,
 				549AD1711E5779910051ED6C /* AppPageViewController.m in Sources */,
 				5476D2071DE770E3001D9DFB /* IQTitleBarButtonItem.m in Sources */,
+				5421FB7B1E676359003AC345 /* JPSThumbnail.m in Sources */,
 				5476D1FE1DE770E3001D9DFB /* IQUITextFieldView+Additions.m in Sources */,
 				54977B9B1E36827900446B68 /* TabBarController.m in Sources */,
+				547A93941E60BAD400609508 /* SZTextView.m in Sources */,
 				54A4FD5D1E3FCED400A12573 /* SVIndefiniteAnimatedView.m in Sources */,
 				54893EB01E37F4D5007BF777 /* HomeViewController.m in Sources */,
 				5476D2011DE770E3001D9DFB /* IQUIWindow+Hierarchy.m in Sources */,
@@ -863,6 +977,7 @@
 				54F59F1F1DE0D0E600CDCE0E /* AFSecurityPolicy.m in Sources */,
 				54B9A2601E5392CC007F0995 /* EditProfileViewController.m in Sources */,
 				5476D2081DE770E3001D9DFB /* IQToolbar.m in Sources */,
+				5421FB7C1E676359003AC345 /* JPSThumbnailAnnotation.m in Sources */,
 				5492BA391E54E77F006638E2 /* SDImageCache.m in Sources */,
 				5492BA3B1E54E77F006638E2 /* SDWebImageCompat.m in Sources */,
 				5492BA091E54CAA2006638E2 /* LoggedInUser.m in Sources */,
@@ -885,6 +1000,7 @@
 				5476D1FD1DE770E3001D9DFB /* IQUIScrollView+Additions.m in Sources */,
 				54A041F01E4BA31100876830 /* TermsAndConditionsViewController.m in Sources */,
 				54AF92C51DDF798D00149CB7 /* AppDelegate.m in Sources */,
+				547C493A1E6C2D5C008DAA34 /* SearchTrialViewController.m in Sources */,
 				54AF92C21DDF798D00149CB7 /* main.m in Sources */,
 				54A4FD611E3FCED400A12573 /* SVRadialGradientLayer.m in Sources */,
 			);

@@ -42,7 +42,10 @@ static const NSUInteger kTimeInterval = 6.0;
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    timer = [NSTimer scheduledTimerWithTimeInterval:kTimeInterval target:self selector:@selector(scrollPageControl) userInfo:nil repeats:YES];
+    if (![LoggedInUser loggedInUser])
+    {
+        timer = [NSTimer scheduledTimerWithTimeInterval:kTimeInterval target:self selector:@selector(scrollPageControl) userInfo:nil repeats:YES];
+    }
 }
 
 -(void)viewWillDisappear:(BOOL)animated
