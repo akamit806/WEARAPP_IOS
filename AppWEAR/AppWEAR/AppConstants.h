@@ -26,6 +26,11 @@ FOUNDATION_EXPORT NSString *const kUpdateAvatar;
 FOUNDATION_EXPORT NSString *const kGetUserDetail;
 FOUNDATION_EXPORT NSString *const kUpdateLocation;
 FOUNDATION_EXPORT NSString *const kGetUsersByRadius;
+FOUNDATION_EXPORT NSString *const kTrialSave;
+FOUNDATION_EXPORT NSString *const kSearchTrial;
+FOUNDATION_EXPORT NSString *const kSearchUserTrial;
+FOUNDATION_EXPORT NSString *const kGetSetting;
+FOUNDATION_EXPORT NSString *const kUpdateSetting;
 
 #pragma -mark API Request Parameters
 
@@ -54,6 +59,16 @@ FOUNDATION_EXPORT NSString *const kLatitude;
 FOUNDATION_EXPORT NSString *const kLongitude;
 FOUNDATION_EXPORT NSString *const kAddress;
 FOUNDATION_EXPORT NSString *const kDistance;
+FOUNDATION_EXPORT NSString *const kTrial_Date;
+FOUNDATION_EXPORT NSString *const kTrial_Name;
+FOUNDATION_EXPORT NSString *const kTrial_Id;
+FOUNDATION_EXPORT NSString *const kTrial_Status;
+FOUNDATION_EXPORT NSString *const kUser_Id;
+FOUNDATION_EXPORT NSString *const kSearch_trial;
+FOUNDATION_EXPORT NSString *const kUser_Name;
+FOUNDATION_EXPORT NSString *const kTrail_Time;
+FOUNDATION_EXPORT NSString *const kIsTrailSelected;
+FOUNDATION_EXPORT NSString *const kTrail_Path;
 
 #pragma -mark API Response Parameters
 
@@ -66,6 +81,18 @@ FOUNDATION_EXPORT NSString *const kData;
 FOUNDATION_EXPORT NSString *const kGenderMale;
 FOUNDATION_EXPORT NSString *const kGenderFemale;
 
+#pragma -mark Weather API
+
+FOUNDATION_EXPORT NSString *const kWeatherAPIURL;
+
+FOUNDATION_EXPORT NSString *const kWeatherAPISubscriptionKey;
+FOUNDATION_EXPORT NSString *const kWeatherLocation;
+FOUNDATION_EXPORT NSString *const kWeatherLocationType;
+FOUNDATION_EXPORT NSString *const kWeatherUnits;
+FOUNDATION_EXPORT NSString *const kWeatherCultureInfo;
+FOUNDATION_EXPORT NSString *const kWeatherVerbose;
+FOUNDATION_EXPORT NSString *const kWeatherSubscriptionKey;
+
 // Common Messages
 
 FOUNDATION_EXPORT NSString *const kMessageNetworkNotAvailable;
@@ -74,3 +101,7 @@ FOUNDATION_EXPORT NSString *const kMessageNetworkNotAvailable;
 
 FOUNDATION_EXPORT NSString *const kLoggedInUser;
 
+#pragma -mark Common Functions
+
+NSDateFormatter *appDateFormatter();
+NSDateFormatter *weatherDateFormatter();

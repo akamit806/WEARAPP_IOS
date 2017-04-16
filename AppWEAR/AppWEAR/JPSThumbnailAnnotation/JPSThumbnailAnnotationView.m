@@ -14,7 +14,7 @@
 NSString * const kJPSThumbnailAnnotationViewReuseID = @"JPSThumbnailAnnotationView";
 
 static CGFloat const kJPSThumbnailAnnotationViewStandardWidth     = 100.0f;
-static CGFloat const kJPSThumbnailAnnotationViewStandardHeight    = 100.0f;
+static CGFloat const kJPSThumbnailAnnotationViewStandardHeight    = 80.0f;
 static CGFloat const kJPSThumbnailAnnotationViewExpandOffset      = 200.0f;
 static CGFloat const kJPSThumbnailAnnotationViewVerticalOffset    = 34.0f;
 static CGFloat const kJPSThumbnailAnnotationViewAnimationDuration = 0.25f;
@@ -67,7 +67,7 @@ static CGFloat const kJPSThumbnailAnnotationViewAnimationDuration = 0.25f;
 }
 
 - (void)setupTitleLabel {
-    _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 60, 100, 40)];
+    _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 60, 100, 20)];
     _titleLabel.textColor = [UIColor lightGrayColor];
     _titleLabel.font = [UIFont systemFontOfSize:17];
     _titleLabel.minimumScaleFactor = 0.8f;
@@ -126,14 +126,13 @@ static CGFloat const kJPSThumbnailAnnotationViewAnimationDuration = 0.25f;
     self.titleLabel.text = thumbnail.title;
     self.disclosureBlock = thumbnail.disclosureBlock;
     self.imageView.contentMode = thumbnail.contentMode;
-    NSURL *picURL = [NSURL fileURLWithPath:thumbnail.profilePicURL];
-    if ([picURL isFileURL])
+    if ([thumbnail.profilePicURL isFileURL])
     {
-        [self.imageView setImage:[UIImage imageWithContentsOfFile:picURL.path]];
+        [self.imageView setImage:[UIImage imageWithContentsOfFile:thumbnail.profilePicURL.path]];
     }
     else
     {
-        [self.imageView sd_setImageWithURL:[NSURL URLWithString:thumbnail.profilePicURL]];
+        [self.imageView sd_setImageWithURL:thumbnail.profilePicURL];
     }
 }
 

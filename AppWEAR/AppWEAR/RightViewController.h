@@ -10,4 +10,6 @@
 
 @interface RightViewController : BaseViewController
 
+@property (nonatomic, copy) NSArray *temperatures;
+
 @end

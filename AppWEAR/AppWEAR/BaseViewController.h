@@ -16,10 +16,14 @@
 #import "LoggedInUser.h"
 #import "LocationManager.h"
 #import "UIColor+AppColor.h"
+#import "RESideMenu.h"
+#import "AppDelegate.h"
 
 @interface BaseViewController : UIViewController
 
 -(void)addLeftSideMenuButton;//Call to add burger left bar button item.
 -(void)leftSideMenuButtonClicked;//Action for left side menu button.
+
+-(UIImage *)getCurrentScreenshot;
 
 @end

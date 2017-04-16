@@ -20,6 +20,8 @@ FOUNDATION_EXPORT NSString *const kLocationPlacemark;
 }
 
 @property (nonatomic, strong, readonly) CLPlacemark *recentPlacemark;
+@property (nonatomic, strong, readonly) CLLocationManager *locationManager;
+@property (nonatomic, strong, readonly) CLLocation *currentLocation;
 
 +(instancetype)sharedManager;
 

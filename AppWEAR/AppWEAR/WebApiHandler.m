@@ -13,6 +13,7 @@
 @interface WebApiHandler ()
 {
     AFHTTPSessionManager *sessionManager;
+    AFHTTPSessionManager *weatherSessionManager;
 }
 
 @end
@@ -44,7 +45,11 @@
     sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:kAPIBaseURL] sessionConfiguration:configuration];
     [sessionManager setRequestSerializer:[AFJSONRequestSerializer serializer]];
     [sessionManager setResponseSerializer:[AFHTTPResponseSerializer serializer]];
-//    [sessionManager setResponseSerializer:[AFJSONResponseSerializer serializerWithReadingOptions:NSJSONReadingMutableContainers]];
+    
+    //Weather Session Manager
+    weatherSessionManager = [AFHTTPSessionManager manager];
+    [weatherSessionManager setRequestSerializer:[AFHTTPRequestSerializer serializer]];
+    [weatherSessionManager setResponseSerializer:[AFJSONResponseSerializer serializer]];
 }
 
 #pragma -mark Internal Methods
@@ -177,6 +182,48 @@
 {
     NSString *getUsersByRadius = [kAPIBaseURL stringByAppendingString:kGetUsersByRadius];
     return [self POST:getUsersByRadius parameters:parameters success:success failure:failure];
+}
+
+-(NSURLSessionTask *)saveTrailWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure
+{
+    NSString *saveTrail = [kAPIBaseURL stringByAppendingString:kTrialSave];
+    return [self POST:saveTrail parameters:parameters success:success failure:failure];
+}
+
+-(NSURLSessionTask *)searchTrailWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure
+{
+    NSString *searchTrail = [kAPIBaseURL stringByAppendingString:kSearchTrial];
+    return [self POST:searchTrail parameters:parameters success:success failure:failure];
+}
+
+-(NSURLSessionTask *)searchUserTrailWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure
+{
+    NSString *searchUserTrail = [kAPIBaseURL stringByAppendingString:kSearchUserTrial];
+    return [self POST:searchUserTrail parameters:parameters success:success failure:failure];
+}
+
+-(NSURLSessionTask *)getSettingsWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure
+{
+    NSString *getSettings = [kAPIBaseURL stringByAppendingString:kGetSetting];
+    return [self POST:getSettings parameters:parameters success:success failure:failure];
+}
+
+-(NSURLSessionTask *)updateSettingsWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure;
+{
+    NSString *updateSettings = [kAPIBaseURL stringByAppendingString:kUpdateSetting];
+    return [self POST:updateSettings parameters:parameters success:success failure:failure];
+}
+
+#pragma -mark Weather API
+
+-(NSURLSessionTask *)getWeatherInfoWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure
+{
+    return [weatherSessionManager GET:kWeatherAPIURL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        success(responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@", error.localizedDescription);
+        failure(error);
+    }];
 }
 
 @end

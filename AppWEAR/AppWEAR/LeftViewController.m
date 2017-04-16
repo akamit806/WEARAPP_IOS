@@ -74,6 +74,8 @@ static NSString *const kContentName   =   @"contentName";
                 MFMailComposeViewController *composeController = [[MFMailComposeViewController alloc] init];
                 [composeController setMailComposeDelegate:self];
                 [composeController setToRecipients:@[@"feedback@appwear.com"]];
+                NSString *subject = [NSString stringWithFormat:@"Feedback from %@", [[LoggedInUser loggedInUser] fullName]];
+                [composeController setSubject:subject];
                 [self presentViewController:composeController animated:YES completion:nil];
             }
             
@@ -82,7 +84,7 @@ static NSString *const kContentName   =   @"contentName";
             
             break;
         case 8:
-            
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://itunesconnect.apple.com"]];
             break;
             
         default:

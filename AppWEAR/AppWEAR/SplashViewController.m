@@ -10,6 +10,7 @@
 #import "IntroductionViewController.h"
 #import "TabBarController.h"
 #import "LeftViewController.h"
+#import "RightViewController.h"
 #import "SignInViewController.h"
 #import "RESideMenu.h"
 #import <CoreText/CoreText.h>
@@ -67,7 +68,8 @@
 {
     TabBarController *tabBarController = [self.storyboard instantiateViewControllerWithIdentifier:@"TabBarController"];
     LeftViewController *leftController = [self.storyboard instantiateViewControllerWithIdentifier:@"LeftViewController"];
-    RESideMenu *sideMenu = [[RESideMenu alloc] initWithContentViewController:tabBarController leftMenuViewController:leftController rightMenuViewController:nil];
+    RightViewController *rightController = [self.storyboard instantiateViewControllerWithIdentifier:@"RightViewController"];
+    RESideMenu *sideMenu = [[RESideMenu alloc] initWithContentViewController:tabBarController leftMenuViewController:leftController rightMenuViewController:rightController];
     sideMenu.contentViewShadowColor = [UIColor blackColor];
     sideMenu.contentViewShadowOffset = CGSizeMake(0, 0);
     sideMenu.contentViewShadowOpacity = 0.6;

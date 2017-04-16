@@ -64,7 +64,14 @@
 
 -(void)shareButtonClicked
 {
+    UIImage *image = [self getCurrentScreenshot];
+    NSArray *items = @[image, @"Shared by AppWear."];
     
+    UIActivityViewController *controller = [[UIActivityViewController alloc]initWithActivityItems:items applicationActivities:nil];
+    
+    [self presentViewController:controller animated:YES completion:^{
+        // executes after the user selects something
+    }];
 }
 
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54030A701E7481CB00CABB8F /* SearchTrailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54030A6F1E7481CB00CABB8F /* SearchTrailTableViewCell.m */; };
+		54030A731E748EB100CABB8F /* TrailActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54030A721E748EB100CABB8F /* TrailActivityTableViewCell.m */; };
 		540D70E61E50E0C500DECF6C /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540D70E11E50E0C400DECF6C /* GoogleAppUtilities.framework */; };
 		540D70E71E50E0C500DECF6C /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 540D70E21E50E0C500DECF6C /* GoogleSignIn.bundle */; };
 		540D70E81E50E0C500DECF6C /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540D70E31E50E0C500DECF6C /* GoogleSignIn.framework */; };
@@ -46,6 +48,10 @@
 		547C493D1E6C2DA5008DAA34 /* NewTrailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 547C493C1E6C2DA5008DAA34 /* NewTrailViewController.m */; };
 		547C49401E6C2DC0008DAA34 /* TrailActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 547C493F1E6C2DC0008DAA34 /* TrailActivityViewController.m */; };
 		547C49431E6C375C008DAA34 /* UIColor+AppColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 547C49421E6C375C008DAA34 /* UIColor+AppColor.m */; };
+		547E64841EA3F13300EA57D8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547E64831EA3F13300EA57D8 /* Social.framework */; };
+		547E64871EA3FD5600EA57D8 /* WarningDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 547E64861EA3FD5600EA57D8 /* WarningDetailViewController.m */; };
+		5481ED891E844654004072B8 /* DDTemperatureUnitConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481ED861E844654004072B8 /* DDTemperatureUnitConverter.m */; };
+		5481ED8A1E844654004072B8 /* DDUnitConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5481ED881E844654004072B8 /* DDUnitConverter.m */; };
 		54847E161E4E3BF2003A6847 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54847E121E4E3BF2003A6847 /* Bolts.framework */; };
 		54847E171E4E3BF2003A6847 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54847E131E4E3BF2003A6847 /* FBSDKCoreKit.framework */; };
 		54847E181E4E3BF2003A6847 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54847E141E4E3BF2003A6847 /* FBSDKLoginKit.framework */; };
@@ -92,6 +98,8 @@
 		549BE0381E65F5590024175A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549BE0371E65F5590024175A /* MapKit.framework */; };
 		549BE03C1E6601410024175A /* ExploreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 549BE03B1E6601410024175A /* ExploreTableViewCell.m */; };
 		54A041F01E4BA31100876830 /* TermsAndConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A041EF1E4BA31100876830 /* TermsAndConditionsViewController.m */; };
+		54A2FCF01E9D476C00748F25 /* TemperetureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A2FCEF1E9D476C00748F25 /* TemperetureTableViewCell.m */; };
+		54A2FCF31E9D5ECE00748F25 /* WarningTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A2FCF21E9D5ECE00748F25 /* WarningTableViewCell.m */; };
 		54A4FD4C1E3FBB6200A12573 /* NSString+PJR.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A4FD4A1E3FBB6200A12573 /* NSString+PJR.m */; };
 		54A4FD501E3FCBAE00A12573 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A4FD4F1E3FCBAE00A12573 /* Reachability.m */; };
 		54A4FD5D1E3FCED400A12573 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A4FD541E3FCED400A12573 /* SVIndefiniteAnimatedView.m */; };
@@ -108,6 +116,7 @@
 		54AF92D01DDF798D00149CB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AF92CE1DDF798D00149CB7 /* LaunchScreen.storyboard */; };
 		54AF92D91DDF7EFA00149CB7 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AF92D81DDF7EFA00149CB7 /* SignInViewController.m */; };
 		54AF92DC1DDF7F2A00149CB7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AF92DB1DDF7F2A00149CB7 /* BaseViewController.m */; };
+		54B712881E71D1420048AFCB /* TextFieldRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B712871E71D1420048AFCB /* TextFieldRightView.m */; };
 		54B9A2601E5392CC007F0995 /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B9A25F1E5392CC007F0995 /* EditProfileViewController.m */; };
 		54C1106E1E3A82D5004FCB16 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C1106D1E3A82D5004FCB16 /* LeftViewController.m */; };
 		54C110711E3A82ED004FCB16 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C110701E3A82ED004FCB16 /* RightViewController.m */; };
@@ -115,6 +124,7 @@
 		54C940901E0874D300B9A9FE /* TextFieldLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9408F1E0874D300B9A9FE /* TextFieldLeftView.m */; };
 		54DE5D671DE37EE400D19EC3 /* TextFieldPadding.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DE5D661DE37EE400D19EC3 /* TextFieldPadding.m */; };
 		54E003561E3E765300FC5DCB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E003551E3E765300FC5DCB /* MessageUI.framework */; };
+		54ED21171E9D67890049C03A /* WeatherInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 54ED21161E9D67890049C03A /* WeatherInfo.m */; };
 		54F0177C1DEF592B00CE3ABE /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F0177B1DEF592B00CE3ABE /* ForgotPasswordViewController.m */; };
 		54F59F1D1DE0D0E600CDCE0E /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F59F111DE0D0E600CDCE0E /* AFHTTPSessionManager.m */; };
 		54F59F1E1DE0D0E600CDCE0E /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F59F141DE0D0E600CDCE0E /* AFNetworkReachabilityManager.m */; };
@@ -126,6 +136,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54030A6E1E7481CB00CABB8F /* SearchTrailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTrailTableViewCell.h; sourceTree = "<group>"; };
+		54030A6F1E7481CB00CABB8F /* SearchTrailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTrailTableViewCell.m; sourceTree = "<group>"; };
+		54030A711E748EB100CABB8F /* TrailActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrailActivityTableViewCell.h; sourceTree = "<group>"; };
+		54030A721E748EB100CABB8F /* TrailActivityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrailActivityTableViewCell.m; sourceTree = "<group>"; };
 		540D70E11E50E0C400DECF6C /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppUtilities.framework; sourceTree = "<group>"; };
 		540D70E21E50E0C500DECF6C /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
 		540D70E31E50E0C500DECF6C /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
@@ -196,6 +210,13 @@
 		547C493F1E6C2DC0008DAA34 /* TrailActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrailActivityViewController.m; sourceTree = "<group>"; };
 		547C49411E6C375C008DAA34 /* UIColor+AppColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AppColor.h"; sourceTree = "<group>"; };
 		547C49421E6C375C008DAA34 /* UIColor+AppColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AppColor.m"; sourceTree = "<group>"; };
+		547E64831EA3F13300EA57D8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		547E64851EA3FD5600EA57D8 /* WarningDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarningDetailViewController.h; sourceTree = "<group>"; };
+		547E64861EA3FD5600EA57D8 /* WarningDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarningDetailViewController.m; sourceTree = "<group>"; };
+		5481ED851E844654004072B8 /* DDTemperatureUnitConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTemperatureUnitConverter.h; sourceTree = "<group>"; };
+		5481ED861E844654004072B8 /* DDTemperatureUnitConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTemperatureUnitConverter.m; sourceTree = "<group>"; };
+		5481ED871E844654004072B8 /* DDUnitConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDUnitConverter.h; sourceTree = "<group>"; };
+		5481ED881E844654004072B8 /* DDUnitConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDUnitConverter.m; sourceTree = "<group>"; };
 		54847E121E4E3BF2003A6847 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		54847E131E4E3BF2003A6847 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		54847E141E4E3BF2003A6847 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -283,6 +304,10 @@
 		549BE03B1E6601410024175A /* ExploreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreTableViewCell.m; sourceTree = "<group>"; };
 		54A041EE1E4BA31100876830 /* TermsAndConditionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsAndConditionsViewController.h; sourceTree = "<group>"; };
 		54A041EF1E4BA31100876830 /* TermsAndConditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsAndConditionsViewController.m; sourceTree = "<group>"; };
+		54A2FCEE1E9D476C00748F25 /* TemperetureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemperetureTableViewCell.h; sourceTree = "<group>"; };
+		54A2FCEF1E9D476C00748F25 /* TemperetureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemperetureTableViewCell.m; sourceTree = "<group>"; };
+		54A2FCF11E9D5ECE00748F25 /* WarningTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarningTableViewCell.h; sourceTree = "<group>"; };
+		54A2FCF21E9D5ECE00748F25 /* WarningTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarningTableViewCell.m; sourceTree = "<group>"; };
 		54A4FD491E3FBB6200A12573 /* NSString+PJR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PJR.h"; sourceTree = "<group>"; };
 		54A4FD4A1E3FBB6200A12573 /* NSString+PJR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PJR.m"; sourceTree = "<group>"; };
 		54A4FD4E1E3FCBAE00A12573 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -312,6 +337,8 @@
 		54AF92D81DDF7EFA00149CB7 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		54AF92DA1DDF7F2A00149CB7 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		54AF92DB1DDF7F2A00149CB7 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		54B712861E71D1420048AFCB /* TextFieldRightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldRightView.h; sourceTree = "<group>"; };
+		54B712871E71D1420048AFCB /* TextFieldRightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldRightView.m; sourceTree = "<group>"; };
 		54B9A25E1E5392CC007F0995 /* EditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
 		54B9A25F1E5392CC007F0995 /* EditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileViewController.m; sourceTree = "<group>"; };
 		54C1106C1E3A82D5004FCB16 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
@@ -325,6 +352,8 @@
 		54DE5D651DE37EE400D19EC3 /* TextFieldPadding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldPadding.h; sourceTree = "<group>"; };
 		54DE5D661DE37EE400D19EC3 /* TextFieldPadding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldPadding.m; sourceTree = "<group>"; };
 		54E003551E3E765300FC5DCB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		54ED21151E9D67890049C03A /* WeatherInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherInfo.h; sourceTree = "<group>"; };
+		54ED21161E9D67890049C03A /* WeatherInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherInfo.m; sourceTree = "<group>"; };
 		54F0177A1DEF592B00CE3ABE /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
 		54F0177B1DEF592B00CE3ABE /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
 		54F59F101DE0D0E600CDCE0E /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
@@ -349,6 +378,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547E64841EA3F13300EA57D8 /* Social.framework in Frameworks */,
 				549BE0381E65F5590024175A /* MapKit.framework in Frameworks */,
 				548868D81E649A9C0059A274 /* CoreLocation.framework in Frameworks */,
 				540D70EE1E50E11000DECF6C /* SystemConfiguration.framework in Frameworks */,
@@ -399,6 +429,8 @@
 				54DE5D661DE37EE400D19EC3 /* TextFieldPadding.m */,
 				54C9408E1E0874D300B9A9FE /* TextFieldLeftView.h */,
 				54C9408F1E0874D300B9A9FE /* TextFieldLeftView.m */,
+				54B712861E71D1420048AFCB /* TextFieldRightView.h */,
+				54B712871E71D1420048AFCB /* TextFieldRightView.m */,
 			);
 			name = TextFieldPadding;
 			sourceTree = "<group>";
@@ -490,6 +522,17 @@
 			name = NavigationController;
 			sourceTree = "<group>";
 		};
+		5481ED841E844639004072B8 /* TemperatureConverter */ = {
+			isa = PBXGroup;
+			children = (
+				5481ED851E844654004072B8 /* DDTemperatureUnitConverter.h */,
+				5481ED861E844654004072B8 /* DDTemperatureUnitConverter.m */,
+				5481ED871E844654004072B8 /* DDUnitConverter.h */,
+				5481ED881E844654004072B8 /* DDUnitConverter.m */,
+			);
+			name = TemperatureConverter;
+			sourceTree = "<group>";
+		};
 		54847E1A1E4E4FB0003A6847 /* SocialManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -508,6 +551,8 @@
 				5492BA051E54C52C006638E2 /* User.m */,
 				5492BA071E54CAA2006638E2 /* LoggedInUser.h */,
 				5492BA081E54CAA2006638E2 /* LoggedInUser.m */,
+				54ED21151E9D67890049C03A /* WeatherInfo.h */,
+				54ED21161E9D67890049C03A /* WeatherInfo.m */,
 			);
 			name = Modals;
 			sourceTree = "<group>";
@@ -615,6 +660,14 @@
 			children = (
 				549BE03A1E6601410024175A /* ExploreTableViewCell.h */,
 				549BE03B1E6601410024175A /* ExploreTableViewCell.m */,
+				54030A6E1E7481CB00CABB8F /* SearchTrailTableViewCell.h */,
+				54030A6F1E7481CB00CABB8F /* SearchTrailTableViewCell.m */,
+				54030A711E748EB100CABB8F /* TrailActivityTableViewCell.h */,
+				54030A721E748EB100CABB8F /* TrailActivityTableViewCell.m */,
+				54A2FCEE1E9D476C00748F25 /* TemperetureTableViewCell.h */,
+				54A2FCEF1E9D476C00748F25 /* TemperetureTableViewCell.m */,
+				54A2FCF11E9D5ECE00748F25 /* WarningTableViewCell.h */,
+				54A2FCF21E9D5ECE00748F25 /* WarningTableViewCell.m */,
 			);
 			name = TableViewCells;
 			sourceTree = "<group>";
@@ -664,6 +717,8 @@
 				547C493F1E6C2DC0008DAA34 /* TrailActivityViewController.m */,
 				54893EB41E37F502007BF777 /* WarningViewController.h */,
 				54893EB51E37F502007BF777 /* WarningViewController.m */,
+				547E64851EA3FD5600EA57D8 /* WarningDetailViewController.h */,
+				547E64861EA3FD5600EA57D8 /* WarningDetailViewController.m */,
 				54A041EE1E4BA31100876830 /* TermsAndConditionsViewController.h */,
 				54A041EF1E4BA31100876830 /* TermsAndConditionsViewController.m */,
 			);
@@ -757,6 +812,7 @@
 		54DE5D641DE37C6B00D19EC3 /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
+				5481ED841E844639004072B8 /* TemperatureConverter */,
 				547C49351E6C2BC5008DAA34 /* CAPSPageMenu.h */,
 				547C49361E6C2BC5008DAA34 /* CAPSPageMenu.m */,
 				547A93921E60BAD400609508 /* SZTextView.h */,
@@ -781,6 +837,7 @@
 		54E003521E3E75C600FC5DCB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				547E64831EA3F13300EA57D8 /* Social.framework */,
 				549BE0371E65F5590024175A /* MapKit.framework */,
 				548868D71E649A9C0059A274 /* CoreLocation.framework */,
 				540D70ED1E50E11000DECF6C /* SystemConfiguration.framework */,
@@ -865,6 +922,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = K3KT722586;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -935,16 +997,19 @@
 				54866E931E0702760022A021 /* IntroContent.m in Sources */,
 				5476D2051DE770E3001D9DFB /* IQBarButtonItem.m in Sources */,
 				54A4FD501E3FCBAE00A12573 /* Reachability.m in Sources */,
+				54A2FCF01E9D476C00748F25 /* TemperetureTableViewCell.m in Sources */,
 				5492BA431E54E77F006638E2 /* UIImage+MultiFormat.m in Sources */,
 				549BE03C1E6601410024175A /* ExploreTableViewCell.m in Sources */,
 				5476D2031DE770E3001D9DFB /* IQKeyboardReturnKeyHandler.m in Sources */,
 				5476D2061DE770E3001D9DFB /* IQPreviousNextView.m in Sources */,
 				5492BA361E54E77F006638E2 /* MKAnnotationView+WebCache.m in Sources */,
+				54B712881E71D1420048AFCB /* TextFieldRightView.m in Sources */,
 				547C49401E6C2DC0008DAA34 /* TrailActivityViewController.m in Sources */,
 				5492BA3C1E54E77F006638E2 /* SDWebImageDecoder.m in Sources */,
 				547C493D1E6C2DA5008DAA34 /* NewTrailViewController.m in Sources */,
 				5476D1D51DE763CA001D9DFB /* IntermediateSignUpViewController.m in Sources */,
 				5476D1FF1DE770E3001D9DFB /* IQUIView+Hierarchy.m in Sources */,
+				5481ED8A1E844654004072B8 /* DDUnitConverter.m in Sources */,
 				5492BA421E54E77F006638E2 /* UIImage+GIF.m in Sources */,
 				54847E1D1E4E4FE0003A6847 /* SocialManager.m in Sources */,
 				5476D2001DE770E3001D9DFB /* IQUIViewController+Additions.m in Sources */,
@@ -952,7 +1017,9 @@
 				54AF92DC1DDF7F2A00149CB7 /* BaseViewController.m in Sources */,
 				547C49371E6C2BC5008DAA34 /* CAPSPageMenu.m in Sources */,
 				5421FB731E675B9E003AC345 /* UserAnnotation.m in Sources */,
+				54ED21171E9D67890049C03A /* WeatherInfo.m in Sources */,
 				548868D61E6499D30059A274 /* LocationManager.m in Sources */,
+				54030A731E748EB100CABB8F /* TrailActivityTableViewCell.m in Sources */,
 				54A4FD4C1E3FBB6200A12573 /* NSString+PJR.m in Sources */,
 				549AD1711E5779910051ED6C /* AppPageViewController.m in Sources */,
 				5476D2071DE770E3001D9DFB /* IQTitleBarButtonItem.m in Sources */,
@@ -965,6 +1032,7 @@
 				5476D2011DE770E3001D9DFB /* IQUIWindow+Hierarchy.m in Sources */,
 				54AF92C81DDF798D00149CB7 /* SplashViewController.m in Sources */,
 				5476D2091DE770E3001D9DFB /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				54A2FCF31E9D5ECE00748F25 /* WarningTableViewCell.m in Sources */,
 				54F59F251DE0DA5800CDCE0E /* WebApiHandler.m in Sources */,
 				5476D1FC1DE770E3001D9DFB /* IQNSArray+Sort.m in Sources */,
 				54F59F221DE0D0E600CDCE0E /* AFURLSessionManager.m in Sources */,
@@ -979,14 +1047,17 @@
 				5476D2081DE770E3001D9DFB /* IQToolbar.m in Sources */,
 				5421FB7C1E676359003AC345 /* JPSThumbnailAnnotation.m in Sources */,
 				5492BA391E54E77F006638E2 /* SDImageCache.m in Sources */,
+				547E64871EA3FD5600EA57D8 /* WarningDetailViewController.m in Sources */,
 				5492BA3B1E54E77F006638E2 /* SDWebImageCompat.m in Sources */,
 				5492BA091E54CAA2006638E2 /* LoggedInUser.m in Sources */,
 				5492BA471E54E77F006638E2 /* UIView+WebCache.m in Sources */,
+				54030A701E7481CB00CABB8F /* SearchTrailTableViewCell.m in Sources */,
 				54F59F1D1DE0D0E600CDCE0E /* AFHTTPSessionManager.m in Sources */,
 				54A4FD5E1E3FCED400A12573 /* SVProgressAnimatedView.m in Sources */,
 				54F0177C1DEF592B00CE3ABE /* ForgotPasswordViewController.m in Sources */,
 				5492BA451E54E77F006638E2 /* UIImageView+HighlightedWebCache.m in Sources */,
 				54977B971E367FFC00446B68 /* UIViewController+RESideMenu.m in Sources */,
+				5481ED891E844654004072B8 /* DDTemperatureUnitConverter.m in Sources */,
 				5492BA3A1E54E77F006638E2 /* SDImageCacheConfig.m in Sources */,
 				54893EB31E37F4EF007BF777 /* TrailViewController.m in Sources */,
 				5444BD421E56412F00A3DC57 /* SettingsViewController.m in Sources */,

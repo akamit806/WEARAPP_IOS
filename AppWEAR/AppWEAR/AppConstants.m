@@ -24,6 +24,11 @@ NSString *const kUpdateAvatar   =       @"/updateavtar/";
 NSString *const kGetUserDetail  =       @"/getUserdetail/";
 NSString *const kUpdateLocation =       @"/updatelocation";
 NSString *const kGetUsersByRadius =     @"/getusersbyRadius";
+NSString *const kTrialSave        =     @"/trialSave";
+NSString *const kSearchTrial      =     @"/searchTrial";
+NSString *const kSearchUserTrial  =     @"/searchUserTrial";
+NSString *const kGetSetting       =     @"/getsetting";
+NSString *const kUpdateSetting    =     @"/updatesetting";
 
 #pragma -mark API Request Parameters
 
@@ -52,6 +57,16 @@ NSString *const kLatitude       =       @"latitude";
 NSString *const kLongitude      =       @"longitude";
 NSString *const kAddress        =       @"address";
 NSString *const kDistance       =       @"distance";
+NSString *const kTrial_Date     =       @"trial_date";
+NSString *const kTrial_Name     =       @"trial_name";
+NSString *const kTrial_Id       =       @"trial_id";
+NSString *const kTrial_Status   =       @"trial_status";
+NSString *const kUser_Id        =       @"user_id";
+NSString *const kSearch_trial   =       @"search_trial";
+NSString *const kUser_Name      =       @"user_name";
+NSString *const kTrail_Time     =       @"trial_time";
+NSString *const kIsTrailSelected     =       @"isTrailSelected";
+NSString *const kTrail_Path     =       @"trail_path";
 
 #pragma -mark API Response Parameters
 
@@ -64,6 +79,18 @@ NSString *const kData           =       @"data";
 NSString *const kGenderMale     =       @"male";
 NSString *const kGenderFemale   =       @"female";
 
+#pragma -mark Weather API
+
+NSString *const kWeatherAPIURL  =       @"https://earthnetworks.azure-api.net/data/forecasts/v1/daily";
+
+NSString *const kWeatherAPISubscriptionKey = @"71aa68b2ba84461bb02f4c48a3c22c0d";
+NSString *const kWeatherLocation = @"location";
+NSString *const kWeatherLocationType = @"locationtype";
+NSString *const kWeatherUnits = @"units";
+NSString *const kWeatherCultureInfo = @"cultureinfo";
+NSString *const kWeatherVerbose = @"verbose";
+NSString *const kWeatherSubscriptionKey = @"subscription-key";
+
 #pragma -mark Common Messages
 
 NSString *const kMessageNetworkNotAvailable    =   @"Internet connection is not reachable, Please try later.";
@@ -71,3 +98,30 @@ NSString *const kMessageNetworkNotAvailable    =   @"Internet connection is not 
 #pragma -mark Other Constants
 
 NSString *const kLoggedInUser   =       @"LoggedInUser";
+
+#pragma -mark Common Functions
+
+NSDateFormatter *appDateFormatter()
+{
+    static NSDateFormatter *dateFormatter = nil;
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-mm-dd HH:MM:SS"];
+        [dateFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"IST"]];
+    });
+    return dateFormatter;
+}
+
+NSDateFormatter *weatherDateFormatter()
+{//2017-04-11T18:00:00
+    static NSDateFormatter *dateFormatter = nil;
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-mm-ddTHH:MM:SS"];
+        [dateFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"IST"]];
+    });
+    return dateFormatter;
+}
+

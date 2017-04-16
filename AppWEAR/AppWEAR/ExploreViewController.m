@@ -47,21 +47,16 @@
 
 -(void)getUsers
 {
+    [_mapView removeAnnotations:_mapView.annotations];
     CLPlacemark *placemark = [[LocationManager sharedManager] recentPlacemark];
     if (placemark)
     {
-        MKCoordinateRegion region;
-        MKCoordinateSpan span;
-        span.latitudeDelta = 0.005;
-        span.longitudeDelta = 0.005;
-        region.span = span;
-        region.center = placemark.location.coordinate;
-        [_mapView setRegion:region animated:YES];
+        [self zoomMapViewForCoordinate:placemark.location.coordinate latitudeDelta:0.01 longitudeDelta:0.01];
         
         JPSThumbnail *thumbnail = [[JPSThumbnail alloc] init];
         thumbnail.title = [NSString stringWithFormat:@"%@ %@", [LoggedInUser loggedInUser].firstName, [LoggedInUser loggedInUser].lastName];
         NSString *pinImagePath = [[NSBundle mainBundle] pathForResource:@"pin" ofType:@"png"];
-        thumbnail.profilePicURL = pinImagePath;
+        thumbnail.profilePicURL = [NSURL fileURLWithPath:pinImagePath];
         thumbnail.coordinate = [[LocationManager sharedManager] recentPlacemark].location.coordinate;
         thumbnail.disclosureBlock = ^{ NSLog(@"selected Empire"); };
         [_mapView addAnnotation:[JPSThumbnailAnnotation annotationWithThumbnail:thumbnail]];
@@ -114,6 +109,17 @@
     }
 }
 
+-(void)zoomMapViewForCoordinate:(CLLocationCoordinate2D)coordinate latitudeDelta:(CLLocationDegrees)latDelta longitudeDelta:(CLLocationDegrees)longDelta
+{
+    MKCoordinateRegion region;
+    MKCoordinateSpan span;
+    span.latitudeDelta = latDelta;
+    span.longitudeDelta = longDelta;
+    region.span = span;
+    region.center = coordinate;
+    [_mapView setRegion:region animated:YES];
+}
+
 -(void)updateContent
 {
     [self.tableViewFriends reloadData];
@@ -122,8 +128,8 @@
     
     JPSThumbnail *thumbnail = [[JPSThumbnail alloc] init];
     thumbnail.title = [NSString stringWithFormat:@"%@ %@", [LoggedInUser loggedInUser].firstName, [LoggedInUser loggedInUser].lastName];
-    NSURL *pinURL = [[NSBundle mainBundle] URLForResource:@"pin" withExtension:@"png"];
-    thumbnail.profilePicURL = pinURL.path;
+    NSString *pinImagePath = [[NSBundle mainBundle] pathForResource:@"pin" ofType:@"png"];
+    thumbnail.profilePicURL = [NSURL fileURLWithPath:pinImagePath];
     thumbnail.coordinate = [[LocationManager sharedManager] recentPlacemark].location.coordinate;
     thumbnail.disclosureBlock = ^{ NSLog(@"selected Empire"); };
     [annotations addObject:[JPSThumbnailAnnotation annotationWithThumbnail:thumbnail]];
@@ -132,7 +138,7 @@
     {
         JPSThumbnail *thumbnail = [[JPSThumbnail alloc] init];
         thumbnail.title = [NSString stringWithFormat:@"%@ %@", [user valueForKey:kFirstName], [user valueForKey:kLastName]];
-        
+        thumbnail.profilePicURL = [NSURL URLWithString:[user valueForKey:@"avtar"]];
         thumbnail.coordinate = CLLocationCoordinate2DMake([[user valueForKey:kLatitude] doubleValue], [[user valueForKey:kLongitude] doubleValue]);
         thumbnail.disclosureBlock = ^{ NSLog(@"selected Empire"); };
         [annotations addObject:[JPSThumbnailAnnotation annotationWithThumbnail:thumbnail]];
@@ -183,7 +189,8 @@
 //    return pinView;
 //}
 
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
     if ([annotation conformsToProtocol:@protocol(JPSThumbnailAnnotationProtocol)]) {
         return [((NSObject<JPSThumbnailAnnotationProtocol> *)annotation) annotationViewInMap:mapView];
     }
@@ -200,9 +207,17 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     ExploreTableViewCell *cell = [_tableViewFriends dequeueReusableCellWithIdentifier:NSStringFromClass([ExploreTableViewCell class]) forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     NSDictionary *user = [users objectAtIndex:indexPath.row];
     [cell setUser:user];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary *user = [users objectAtIndex:indexPath.row];
+    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake([[user valueForKey:kLatitude] doubleValue], [[user valueForKey:kLongitude] doubleValue]);
+    [self zoomMapViewForCoordinate:coordinate latitudeDelta:0.000 longitudeDelta:0.000];
 }
 
 @end

@@ -33,4 +33,18 @@
 
 -(NSURLSessionTask *)getUsersByRadiusWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure;
 
+-(NSURLSessionTask *)saveTrailWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure;
+
+-(NSURLSessionTask *)searchTrailWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure;
+
+-(NSURLSessionTask *)searchUserTrailWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure;
+
+-(NSURLSessionTask *)getSettingsWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure;
+
+-(NSURLSessionTask *)updateSettingsWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure;
+
+#pragma -mark Weather API
+
+-(NSURLSessionTask *)getWeatherInfoWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure;
+
 @end

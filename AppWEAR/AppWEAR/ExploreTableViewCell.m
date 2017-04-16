@@ -2,8 +2,8 @@
 //  ExploreTableViewCell.m
 //  AppWEAR
 //
-//  Created by Hashim Khan on 01/03/17.
-//  Copyright © 2017 Hashim Khan. All rights reserved.
+//  Created by HKM on 01/03/17.
+//  Copyright © 2017 HKM. All rights reserved.
 //
 
 #import "ExploreTableViewCell.h"

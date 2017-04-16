@@ -2,8 +2,8 @@
 //  UserAnnotation.h
 //  AppWEAR
 //
-//  Created by Hashim Khan on 02/03/17.
-//  Copyright © 2017 Hashim Khan. All rights reserved.
+//  Created by HKM on 02/03/17.
+//  Copyright © 2017 HKM. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

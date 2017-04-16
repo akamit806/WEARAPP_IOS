@@ -7,8 +7,11 @@
 //
 
 #import "WarningViewController.h"
+#import "WarningTableViewCell.h"
 
-@interface WarningViewController ()
+@interface WarningViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableViewWarning;
 
 @end
 
@@ -19,6 +22,27 @@
     [super viewDidLoad];
     self.title = @"WARNING";
     [self addLeftSideMenuButton];
+    [_tableViewWarning setDelegate:self];
+    [_tableViewWarning setDataSource:self];
+    [_tableViewWarning reloadData];
+}
+
+#pragma -mark UITableViewDataSource Methods
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 6;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    WarningTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([WarningTableViewCell class]) forIndexPath:indexPath];
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"WarningDetailViewControllerSegue" sender:nil];
 }
 
 @end

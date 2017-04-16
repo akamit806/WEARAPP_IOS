@@ -23,11 +23,14 @@ static const NSUInteger kTimeInterval = 30.0;
     NSTimer *timer;
 }
 
+@property (nonatomic, strong, readwrite) CLLocation *currentLocation;
+
 @end
 
 @implementation LocationManager
 
 @synthesize recentPlacemark = recentPlacemark;
+@synthesize locationManager = locationManager;
 
 +(instancetype)sharedManager
 {
@@ -178,6 +181,7 @@ static const NSUInteger kTimeInterval = 30.0;
     {
         __weak typeof (self) weakSelf = self;
         CLLocation *location = locations.firstObject;
+        self.currentLocation = location;
         [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
             __block CLPlacemark *placemark = placemarks.lastObject;
             __strong typeof (weakSelf) strongSelf = weakSelf;
