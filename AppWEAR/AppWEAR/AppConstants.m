@@ -29,6 +29,7 @@ NSString *const kSearchTrial      =     @"/searchTrial";
 NSString *const kSearchUserTrial  =     @"/searchUserTrial";
 NSString *const kGetSetting       =     @"/getsetting";
 NSString *const kUpdateSetting    =     @"/updatesetting";
+NSString *const ktrialDelete      =     @"/trialDelete";
 
 #pragma -mark API Request Parameters
 

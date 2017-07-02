@@ -93,6 +93,22 @@ static const NSUInteger kTrailUpdateTimeInterval = 30.0;
 
 -(void)stopTrailOperation
 {
+//    __block UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Message" message:@"Please add name for trail." preferredStyle:UIAlertControllerStyleAlert];
+//    __block UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        UITextField *textField = alertController.textFields.firstObject;
+//        if (textField.text.length == 0)
+//        {
+//            
+//        }
+//    }];
+//    [alertController addAction:okAction];
+//    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+//        textField.placeholder = @"Add trail name";
+//        [[NSNotificationCenter defaultCenter] addObserverForName:UITextFieldTextDidChangeNotification object:textField queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+//            okAction.enabled = (textField.text.length > 0);
+//        }];
+//    }];
+    
     CLLocation *location = [LocationManager sharedManager].currentLocation;
     JPSThumbnail *thumbnail = [[JPSThumbnail alloc] init];
     thumbnail.title = @"";

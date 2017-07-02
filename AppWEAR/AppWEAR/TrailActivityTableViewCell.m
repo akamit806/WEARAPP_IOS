@@ -29,4 +29,12 @@
     [_labelTime setText:[_trail valueForKey:kTrial_Date]];
 }
 
+- (IBAction)deleteClicked:(UIButton *)sender
+{
+    if ([self.delegate respondsToSelector:@selector(trailActivityTableViewCell:didClickedDeleteButton:)])
+    {
+        [self.delegate trailActivityTableViewCell:self didClickedDeleteButton:sender];
+    }
+}
+
 @end

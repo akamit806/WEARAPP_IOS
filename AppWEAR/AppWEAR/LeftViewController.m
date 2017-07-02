@@ -81,7 +81,23 @@ static NSString *const kContentName   =   @"contentName";
             
             break;
         case 7:
+        {
+            NSArray *items = @[@"Download AppWear."];
+
+            UIActivityViewController *controller = [[UIActivityViewController alloc]initWithActivityItems:items applicationActivities:nil];
+            if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            {
+                UITabBarController *tabController = (UITabBarController *)self.sideMenuViewController.contentViewController;
+                UINavigationController *navController = tabController.selectedViewController;
+                
+                controller.popoverPresentationController.sourceView = self.view;
+                controller.popoverPresentationController.barButtonItem = navController.topViewController.navigationItem.leftBarButtonItem;
+            }
             
+            [self.sideMenuViewController presentViewController:controller animated:YES completion:^{
+                // executes after the user selects something
+            }];
+        }
             break;
         case 8:
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://itunesconnect.apple.com"]];

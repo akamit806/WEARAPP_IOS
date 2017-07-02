@@ -89,6 +89,11 @@
     NSArray *items = @[image, @"Shared by AppWear."];
     
     UIActivityViewController *controller = [[UIActivityViewController alloc]initWithActivityItems:items applicationActivities:nil];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        controller.popoverPresentationController.sourceView = self.view;
+        controller.popoverPresentationController.barButtonItem = self.navigationItem.rightBarButtonItem;
+    }
     
     [self presentViewController:controller animated:YES completion:^{
         // executes after the user selects something

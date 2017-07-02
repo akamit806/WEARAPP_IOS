@@ -14,7 +14,7 @@
 #import "SVProgressHUD.h"
 #import "TrailActivityTableViewCell.h"
 
-@interface TrailActivityViewController () <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface TrailActivityViewController () <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, TrailActivityTableViewCellDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableViewTrails;
 @property (weak, nonatomic) IBOutlet TextFieldRightView *textFieldTrails;
@@ -117,6 +117,55 @@
     }
 }
 
+-(void)deleteTrail:(NSDictionary *)trail
+{
+    if ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == NotReachable)
+    {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Message" message:kMessageNetworkNotAvailable preferredStyle:UIAlertControllerStyleAlert];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+        [self presentViewController:alertController animated:YES completion:nil];
+        return;
+    }
+    else
+    {
+        __weak typeof (self) weakSelf = self;
+        LoggedInUser *loggedInUser = [LoggedInUser loggedInUser];
+        NSDictionary *parameters = @{kAccess_Token : loggedInUser.accessToken, kTrial_Id : [trail valueForKey:kTrial_Id]};
+        [SVProgressHUD showWithStatus:@"Deleting..."];
+        [[WebApiHandler sharedHandler] deleteTrailWithParameters:parameters success:^(NSDictionary *response) {
+            [SVProgressHUD dismiss];
+            if ([[response valueForKey:kResponse] isEqualToString:@"Success"])
+            {
+                id dataObject = [response objectForKey:kData];
+                if(dataObject != [NSNull null])
+                {
+                    
+                }
+                else
+                {
+                    
+                }
+            }
+            else
+            {
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error" message:[response valueForKey:kMessage] preferredStyle:UIAlertControllerStyleAlert];
+                [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+                [weakSelf presentViewController:alertController animated:YES completion:nil];
+            }
+        } failure:^(NSError *error) {
+            [SVProgressHUD dismiss];
+        }];
+    }
+}
+
+-(void)trailActivityTableViewCell: (TrailActivityTableViewCell *)cell didClickedDeleteButton:(UIButton *)button
+{
+    NSIndexPath *indexPath = [_tableViewTrails indexPathForCell:cell];
+    NSDictionary *trail = [_allTrails objectAtIndex:indexPath.row];
+    [self deleteTrail:trail];
+}
+
+
 #pragma mark UITableViewDelegate Methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -127,6 +176,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TrailActivityTableViewCell *cell = [_tableViewTrails dequeueReusableCellWithIdentifier:NSStringFromClass([TrailActivityTableViewCell class]) forIndexPath:indexPath];
+    [cell setDelegate:self];
     NSDictionary *trail = [_searchedTrails objectAtIndex:indexPath.row];
     [cell setTrail:trail];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];

@@ -214,6 +214,13 @@
     return [self POST:updateSettings parameters:parameters success:success failure:failure];
 }
 
+-(NSURLSessionTask *)deleteTrailWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure
+{
+    NSString *updateSettings = [kAPIBaseURL stringByAppendingString:ktrialDelete];
+    return [self POST:updateSettings parameters:parameters success:success failure:failure];
+}
+
+
 #pragma -mark Weather API
 
 -(NSURLSessionTask *)getWeatherInfoWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure

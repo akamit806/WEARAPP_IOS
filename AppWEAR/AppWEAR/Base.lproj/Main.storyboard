@@ -1906,15 +1906,28 @@
                                                         <constraint firstAttribute="bottom" secondItem="Icy-0t-gHv" secondAttribute="bottom" id="wR7-HY-ze3"/>
                                                     </constraints>
                                                 </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZm-o1-V96">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="82q-OX-wT3"/>
+                                                        <constraint firstAttribute="height" constant="30" id="Fj2-YT-RQ9"/>
+                                                    </constraints>
+                                                    <state key="normal" image="cross"/>
+                                                    <connections>
+                                                        <action selector="deleteClicked:" destination="itf-vK-V4L" eventType="touchUpInside" id="pKK-bd-L9O"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="SZm-o1-V96" secondAttribute="trailing" constant="5" id="950-yd-Lly"/>
                                                 <constraint firstItem="YPs-Q0-Cuj" firstAttribute="top" secondItem="1yB-bn-jFB" secondAttribute="top" constant="10" id="GFs-6Z-B7E"/>
-                                                <constraint firstAttribute="trailing" secondItem="YPs-Q0-Cuj" secondAttribute="trailing" constant="20" id="a7d-TV-2zf"/>
+                                                <constraint firstAttribute="trailing" secondItem="YPs-Q0-Cuj" secondAttribute="trailing" constant="40" id="a7d-TV-2zf"/>
+                                                <constraint firstItem="SZm-o1-V96" firstAttribute="top" secondItem="1yB-bn-jFB" secondAttribute="top" constant="8" id="aIX-iw-Eg0"/>
                                                 <constraint firstItem="YPs-Q0-Cuj" firstAttribute="leading" secondItem="1yB-bn-jFB" secondAttribute="leading" constant="20" id="dE3-HL-ng7"/>
                                                 <constraint firstAttribute="bottom" secondItem="YPs-Q0-Cuj" secondAttribute="bottom" constant="10" id="qMO-ZT-2Rq"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="deleteButton" destination="SZm-o1-V96" id="Ecw-Uc-wUR"/>
                                             <outlet property="labelName" destination="cbW-Ld-tdQ" id="pp2-s9-Pfj"/>
                                             <outlet property="labelTemp" destination="zQn-fg-xAA" id="mTo-PC-Gy5"/>
                                             <outlet property="labelTime" destination="Hdb-8y-u43" id="1c0-Pr-s9D"/>
@@ -2093,7 +2106,9 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3RV-yd-YUb"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3RV-yd-YUb">
+                                <frame key="frameInset" width="1000" height="1000"/>
+                            </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHk-KX-hRv">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlU-Ad-KRf">
@@ -3200,6 +3215,7 @@
         <image name="check" width="20" height="20"/>
         <image name="check2" width="20" height="20"/>
         <image name="contactus" width="25" height="25"/>
+        <image name="cross" width="30" height="30"/>
         <image name="explore" width="30" height="30"/>
         <image name="explore2" width="30" height="30"/>
         <image name="facebook" width="25" height="25"/>

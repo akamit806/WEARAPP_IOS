@@ -31,6 +31,7 @@ FOUNDATION_EXPORT NSString *const kSearchTrial;
 FOUNDATION_EXPORT NSString *const kSearchUserTrial;
 FOUNDATION_EXPORT NSString *const kGetSetting;
 FOUNDATION_EXPORT NSString *const kUpdateSetting;
+FOUNDATION_EXPORT NSString *const ktrialDelete;
 
 #pragma -mark API Request Parameters
 

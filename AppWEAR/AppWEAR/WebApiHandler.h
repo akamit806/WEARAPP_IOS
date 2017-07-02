@@ -43,6 +43,8 @@
 
 -(NSURLSessionTask *)updateSettingsWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure;
 
+-(NSURLSessionTask *)deleteTrailWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure;
+
 #pragma -mark Weather API
 
 -(NSURLSessionTask *)getWeatherInfoWithParameters:(NSDictionary *)parameters success:(RequestCompletionHandler)success failure:(RequestFailureHandler)failure;
